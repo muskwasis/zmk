@@ -1,0 +1,13 @@
+if SHIELD_TORNE_LEFT
+config ZMK_KEYBOARD_NAME
+    default "torne"
+endif
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+endif
+
+if SHIELD_TORNE_LEFT || SHIELD_TORNE_RIGHT
+config ZMK_SPLIT
+    default y
+endif
+
